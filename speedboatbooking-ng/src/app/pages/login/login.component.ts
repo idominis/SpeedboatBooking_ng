@@ -15,7 +15,7 @@ export class LoginComponent {
   onSubmit() {
     if (this.username === 'admin' && this.password === 'pass123') {
       localStorage.setItem('user', this.username);
-      this.router.navigate(['/speedboat-booking']);
+      this.router.navigate(['/menu']); 
     } else {
       alert('Invalid credentials');
     }

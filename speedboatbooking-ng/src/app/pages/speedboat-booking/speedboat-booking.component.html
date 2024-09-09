@@ -1,1 +1,48 @@
-<p>speedboat-booking works!</p>
+<div class="container mt-4">
+    <h3>Speedboat Booking</h3>
+  
+    <!-- Dropdown za odabir glisera -->
+    <div class="mb-3">
+      <label for="speedboat" class="form-label">Speedboat:</label>
+      <select id="speedboat" class="form-select">
+        <option value="">Select a speedboat</option>
+        <!-- Ovdje će biti opcije za glisere -->
+      </select>
+    </div>
+  
+    <!-- Radiobuttons za odabir datuma -->
+    <div class="mb-3">
+      <input type="radio" id="singleDate" name="dateType" value="single" checked>
+      <label for="singleDate">Single Date</label>
+      <input type="radio" id="rangeDate" name="dateType" value="range">
+      <label for="rangeDate">Range</label>
+    </div>
+  
+    <!-- Polja za unos datuma -->
+    <div class="mb-3">
+      <input type="date" id="date1" class="form-control">
+      <input type="date" id="date2" class="form-control" disabled>
+    </div>
+  
+    <!-- Dropdown za odabir bookera -->
+    <div class="mb-3">
+      <label for="booker" class="form-label">Booker:</label>
+      <select id="booker" class="form-select">
+        <option value="">Select a booker</option>
+        <!-- Ovdje će biti opcije za bookere -->
+      </select>
+      <button class="btn btn-primary mt-2">Add Booker</button>
+    </div>
+  
+    <!-- Radiobuttons za odabir s kormilarom ili bez -->
+    <div class="mb-3">
+      <input type="radio" id="withSkipper" name="skipper" value="true" checked>
+      <label for="withSkipper">With Skipper</label>
+      <input type="radio" id="withoutSkipper" name="skipper" value="false">
+      <label for="withoutSkipper">Without Skipper</label>
+    </div>
+  
+    <!-- Botun za potvrdu -->
+    <button class="btn btn-success">Book It</button>
+  </div>
+  
