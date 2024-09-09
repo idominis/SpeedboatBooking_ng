@@ -1,10 +1,11 @@
-import { ApplicationConfig, provideZoneChangeDetection, isDevMode } from '@angular/core';
+import { ApplicationConfig, isDevMode, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { provideClientHydration } from '@angular/platform-browser';
 import { provideServiceWorker } from '@angular/service-worker';
-import { importProvidersFrom } from '@angular/core';  
-import { FormsModule } from '@angular/forms';  
-import { LoginModule } from './pages/login/login.module';  // Uvezi LoginModule
+import { provideZoneChangeDetection } from '@angular/core';
+import { provideClientHydration } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { LoginModule } from './pages/login/login.module';
+import { MenuModule } from './pages/menu/menu.module';
 
 import { routes } from './app.routes';
 
@@ -17,6 +18,6 @@ export const appConfig: ApplicationConfig = {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    importProvidersFrom(FormsModule, LoginModule)  // Dodaj LoginModule ovdje
+    importProvidersFrom(FormsModule, LoginModule, MenuModule)
   ]
 };

@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuComponent } from './menu.component';
+import { SpeedboatBookingComponent } from './speedboat-booking.component';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router'; // Import RouterModule
 
 @NgModule({
-  declarations: [MenuComponent],
+  declarations: [SpeedboatBookingComponent],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule // Add RouterModule to imports
   ]
 })
-export class MenuModule { }
+export class SpeedboatBookingModule { }

@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-transfer-booking',
-  standalone: true,
-  imports: [],
   templateUrl: './transfer-booking.component.html',
-  styleUrl: './transfer-booking.component.scss'
+  styleUrls: ['./transfer-booking.component.scss'],
+  standalone: true // Dodaj ovo ako je standalone komponenta
 })
 export class TransferBookingComponent {
-
+  // Tvoj kod ovdje
 }
