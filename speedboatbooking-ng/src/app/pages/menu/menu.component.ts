@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { WindowRefService } from '../../services/window-ref.service';
@@ -10,12 +10,14 @@ import { WindowRefService } from '../../services/window-ref.service';
   styleUrls: ['./menu.component.scss'],
   imports: [CommonModule, RouterModule]
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
   isDesktopView: boolean = true;
   isMenuOpen: boolean = false;
 
-  constructor(private windowRef: WindowRefService) {
-    this.checkScreenSize();
+  constructor(private windowRef: WindowRefService) {}
+
+  ngOnInit() {
+    this.checkScreenSize(); // Provjeri veličinu ekrana prilikom inicijalizacije
   }
 
   @HostListener('window:resize', ['$event'])
@@ -34,7 +36,7 @@ export class MenuComponent {
   }
 
   toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen; // Ovdje se mijenja stanje menija
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   closeMenu() {

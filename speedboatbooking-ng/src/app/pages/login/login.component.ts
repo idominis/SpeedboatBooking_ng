@@ -18,7 +18,7 @@ export class LoginComponent {
   onSubmit() {
     if (this.username === 'admin' && this.password === 'pass123') {
       localStorage.setItem('user', this.username);
-      this.router.navigate(['/menu']);
+      this.router.navigate(['/menu/speedboat-booking']); // Preusmjeri na menu s početnom stavkom
     } else {
       alert('Invalid credentials');
     }

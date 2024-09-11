@@ -3,16 +3,16 @@
   <nav class="side-nav bg-light p-3" *ngIf="isDesktopView">
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/speedboat-booking']">Speedboat Booking</a>
+        <a class="nav-link" [routerLink]="['/menu/speedboat-booking']">Speedboat Booking</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/transfer-booking']">Transfer Booking</a>
+        <a class="nav-link" [routerLink]="['/menu/transfer-booking']">Transfer Booking</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/show-table']">Show Table</a>
+        <a class="nav-link" [routerLink]="['/menu/show-table']">Show Table</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/settings']">Settings</a>
+        <a class="nav-link" [routerLink]="['/menu/settings']">Settings</a>
       </li>
     </ul>
   </nav>
@@ -25,16 +25,16 @@
     <div *ngIf="isMenuOpen" class="dropdown-menu show p-3">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/speedboat-booking']" (click)="closeMenu()">Speedboat Booking</a>
+          <a class="nav-link" [routerLink]="['/menu/speedboat-booking']" (click)="closeMenu()">Speedboat Booking</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/transfer-booking']" (click)="closeMenu()">Transfer Booking</a>
+          <a class="nav-link" [routerLink]="['/menu/transfer-booking']" (click)="closeMenu()">Transfer Booking</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/show-table']" (click)="closeMenu()">Show Table</a>
+          <a class="nav-link" [routerLink]="['/menu/show-table']" (click)="closeMenu()">Show Table</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/settings']" (click)="closeMenu()">Settings</a>
+          <a class="nav-link" [routerLink]="['/menu/settings']" (click)="closeMenu()">Settings</a>
         </li>
       </ul>
     </div>
