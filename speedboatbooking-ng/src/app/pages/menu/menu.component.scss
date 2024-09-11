@@ -31,15 +31,15 @@
     }
   
     .dropdown-menu {
-      position: absolute;
-      top: -150px; /* Postavi vrijednost kako bi dropdown bio odmah ispod hamburgera */
-      left: -160px; /* Poravnanje s hamburgerom */
-      width: 250px; /* Širina dropdown menija */
-      background-color: #f8f9fa;
-      z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: none; /* Skriveno dok se ne otvori */
-    }
+        position: fixed; /* Umjesto absolute, koristimo fixed */
+        top: 50px; /* Pozicija odmah ispod hamburgera */
+        left: 10px; /* Poravnanje s hamburgerom */
+        width: 250px; /* Širina dropdown menija */
+        background-color: #f8f9fa;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: none; /* Skriven dok se ne otvori */
+      }
   
     .dropdown-menu.show {
       display: block; /* Prikaži izbornik kada je otvoren */
