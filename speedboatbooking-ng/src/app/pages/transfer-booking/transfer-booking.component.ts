@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   standalone: true // Dodaj ovo ako je standalone komponenta
 })
 export class TransferBookingComponent {
-  // Tvoj kod ovdje
 }
