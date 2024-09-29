@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<div class="app-container">
+  <!-- Prikaži izbornik samo ako nije na login stranici -->
+  <app-menu *ngIf="showMenu"></app-menu>
+
+  <!-- Glavni sadržaj koji se mijenja ovisno o ruti -->
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
